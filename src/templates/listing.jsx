@@ -1,4 +1,5 @@
 import React from "react";
+import {Typography} from "@material-ui/core";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../layout";
@@ -41,9 +42,11 @@ class Listing extends React.Component {
       <Layout>
         <div className="listing-container">
           <div className="posts-container">
-            <Helmet title={config.siteTitle} />
-            <SEO />
-            <PostListing postEdges={postEdges} />
+            {/* <Helmet title={config.siteTitle} /> */}
+            {/* <SEO />
+            <PostListing postEdges={postEdges} /> */}
+            {/* <Typography */}
+            <Typography variant="h5"> Welcome to my website</Typography>
           </div>
           {this.renderPaging()}
         </div>

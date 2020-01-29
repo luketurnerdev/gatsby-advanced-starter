@@ -14,7 +14,6 @@ export default class MainLayout extends React.Component {
       <>
         <NavBar />
         <div className="layout-container">
-          
           <Helmet>
             <meta name="description" content={config.siteDescription} />
             <html lang="en" />
